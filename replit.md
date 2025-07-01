@@ -107,7 +107,7 @@ This is a full-stack web application for Pathways Consulting, a premium college 
 ## Changelog
 - July 01, 2025. Initial setup
 - July 01, 2025. Major design updates:
-  - Updated fonts to Open Sans (heavy weight) for headers and body
+  - Updated fonts to Agrandir-GrandHeavy for headers and Open Sans for body text
   - Changed primary color to powder blue (hsl(194, 74%, 74%))
   - Replaced college text logos with actual college logo images
   - Updated all background images with professional custom graphics
@@ -117,6 +117,7 @@ This is a full-stack web application for Pathways Consulting, a premium college 
   - Updated contact information and location
   - Made footer solid black background
   - Updated copyright to 2025
+  - Implemented custom Agrandir-GrandHeavy font from user's uploaded file
 
 ## User Preferences
 

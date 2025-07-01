@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agrandir+Grand:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   --background: hsl(222, 84%, 5%);
@@ -63,7 +65,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
   }
 
   html {
@@ -93,6 +95,14 @@
   
   .space-bg {
     background: linear-gradient(135deg, hsl(222, 84%, 5%) 0%, hsl(217, 32%, 17%) 50%, hsl(215, 27%, 32%) 100%);
+  }
+
+  .header-font {
+    font-family: 'Agrandir Grand', 'Open Sans', system-ui, sans-serif;
+  }
+
+  .body-font {
+    font-family: 'Open Sans', system-ui, sans-serif;
   }
   
   .parallax-stars {

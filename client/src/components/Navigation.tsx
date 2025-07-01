@@ -27,7 +27,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary">
+          <div className="text-2xl font-bold text-primary header-font">
             Pathways Consulting
           </div>
           <div className="hidden md:flex space-x-8">

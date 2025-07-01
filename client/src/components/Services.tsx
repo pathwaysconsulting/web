@@ -33,7 +33,7 @@ export default function Services() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-5xl font-bold mb-6 header-font">
             Our <span className="text-primary">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -45,7 +45,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div key={index} className="glass-effect rounded-xl p-6 text-center hover:scale-105 transition-transform duration-300">
               <div className="text-3xl mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+              <h3 className="text-lg font-semibold mb-2 header-font">{service.title}</h3>
               <p className="text-muted-foreground text-sm">{service.description}</p>
             </div>
           ))}

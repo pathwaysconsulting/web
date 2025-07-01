@@ -5,12 +5,12 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1446776877081-d282a0f896e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://i.imgur.com/LZkr5nj.png')"
         }}
       ></div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-6xl md:text-7xl font-bold mb-6 animate-float">
+        <h1 className="text-6xl md:text-7xl font-bold mb-6 animate-float header-font">
           Your Journey to{" "}
           <span className="text-primary">Elite Universities</span>
         </h1>

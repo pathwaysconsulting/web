@@ -31,7 +31,7 @@ export default function Consultants() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-5xl font-bold mb-6 header-font">
             Meet Your <span className="text-primary">Consultants</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ export default function Consultants() {
                 alt={`${consultant.name} - ${consultant.school} Graduate`}
                 className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-primary"
               />
-              <h3 className="text-2xl font-bold mb-2">{consultant.name}</h3>
+              <h3 className="text-2xl font-bold mb-2 header-font">{consultant.name}</h3>
               <div className="text-primary font-semibold mb-4">{consultant.school}</div>
               <p className="text-muted-foreground mb-6">{consultant.bio}</p>
               <button className="glass-button px-6 py-2 rounded-full">

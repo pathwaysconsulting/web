@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="text-2xl font-bold text-primary mb-4">Pathways Consulting</div>
+            <div className="text-2xl font-bold text-primary mb-4 header-font">Pathways Consulting</div>
             <p className="text-muted-foreground text-sm">Guiding exceptional students to extraordinary futures.</p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4 header-font">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <button 
@@ -52,7 +52,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
+            <h4 className="font-semibold mb-4 header-font">Resources</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
                 <button className="hover:text-primary transition-colors">
@@ -77,7 +77,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4 header-font">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>hello@pathwaysconsulting.com</li>
               <li>(555) 123-4567</li>

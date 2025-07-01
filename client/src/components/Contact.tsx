@@ -54,7 +54,7 @@ export default function Contact() {
       ></div>
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-5xl font-bold mb-6">
+        <h2 className="text-5xl font-bold mb-6 header-font">
           Ready to Start Your <span className="text-primary">Journey?</span>
         </h2>
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">

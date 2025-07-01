@@ -10,7 +10,7 @@ export default function About() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-6">
+          <h2 className="text-5xl font-bold mb-6 header-font">
             About <span className="text-primary">Pathways</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -21,17 +21,17 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="glass-effect rounded-2xl p-8 text-center">
             <div className="text-4xl font-bold text-primary mb-4">98%</div>
-            <h3 className="text-xl font-semibold mb-2">Success Rate</h3>
+            <h3 className="text-xl font-semibold mb-2 header-font">Success Rate</h3>
             <p className="text-muted-foreground">Students admitted to their top choice universities</p>
           </div>
           <div className="glass-effect rounded-2xl p-8 text-center">
             <div className="text-4xl font-bold text-primary mb-4">500+</div>
-            <h3 className="text-xl font-semibold mb-2">Students Guided</h3>
+            <h3 className="text-xl font-semibold mb-2 header-font">Students Guided</h3>
             <p className="text-muted-foreground">Successful applications and admissions</p>
           </div>
           <div className="glass-effect rounded-2xl p-8 text-center">
             <div className="text-4xl font-bold text-primary mb-4">50+</div>
-            <h3 className="text-xl font-semibold mb-2">Top Universities</h3>
+            <h3 className="text-xl font-semibold mb-2 header-font">Top Universities</h3>
             <p className="text-muted-foreground">Partner institutions and alumni networks</p>
           </div>
         </div>

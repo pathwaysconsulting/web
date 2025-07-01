@@ -7,7 +7,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-cosmic-black/80 backdrop-blur-sm py-12 border-t border-white/10">
+    <footer className="bg-black py-12 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -79,14 +79,13 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 header-font">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>hello@pathwaysconsulting.com</li>
-              <li>(555) 123-4567</li>
-              <li>Los Angeles, CA</li>
+              <li>pathwaysconsultingorg@gmail.com</li>
+              <li>New Jersey, USA</li>
             </ul>
           </div>
         </div>
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Pathways Consulting. All rights reserved.</p>
+          <p>&copy; 2025 Pathways Consulting. All rights reserved.</p>
         </div>
       </div>
     </footer>

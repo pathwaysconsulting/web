@@ -1,55 +1,11 @@
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
-
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    consultant: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validate form
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Please fill in all required fields",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Simulate form submission
-    toast({
-      title: "Consultation Request Submitted!",
-      description: "We'll get back to you within 24 hours."
-    });
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      consultant: "",
-      message: ""
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <section id="contact" className="py-20 relative">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://i.imgur.com/z3y5PfL.png')"
         }}
       ></div>
       
@@ -61,63 +17,27 @@ export default function Contact() {
           Take the first step towards your dream university. Schedule a free consultation with our expert team today.
         </p>
 
-        <div className="glass-effect rounded-2xl p-8 max-w-md mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <input 
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-sm text-white placeholder-gray-300 focus:outline-none focus:border-primary"
-              required
-            />
-            <input 
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-sm text-white placeholder-gray-300 focus:outline-none focus:border-primary"
-              required
-            />
-            <select 
-              name="consultant"
-              value={formData.consultant}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-sm text-white focus:outline-none focus:border-primary"
-            >
-              <option value="" className="text-gray-800">Select Consultant</option>
-              <option value="diya" className="text-gray-800">Diya Patel (Harvard)</option>
-              <option value="aditya" className="text-gray-800">Aditya Kirubakaran (UC Berkeley)</option>
-              <option value="archisa" className="text-gray-800">Archisa Arora (UPenn)</option>
-            </select>
-            <textarea 
-              name="message"
-              placeholder="Tell us about your goals..."
-              rows={4}
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-sm text-white placeholder-gray-300 focus:outline-none focus:border-primary resize-none"
-              required
-            />
-            <button 
-              type="submit"
-              className="w-full glass-button py-3 rounded-lg font-semibold"
-            >
-              Schedule Free Consultation
-            </button>
-          </form>
+        <div className="glass-effect rounded-2xl p-12 max-w-lg mx-auto text-center">
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold mb-4 header-font">Ready to Get Started?</h3>
+            <p className="text-lg text-muted-foreground">
+              Book your free consultation today and begin your journey to your dream university.
+            </p>
+          </div>
+          <a 
+            href="https://calendar.app.google/DzjneFCj2F2ukBRD9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block glass-button px-12 py-4 rounded-full text-lg font-semibold animate-glow hover:scale-105 transition-transform duration-300"
+          >
+            Schedule Free Consultation
+          </a>
         </div>
 
-        <div className="mt-12 flex justify-center space-x-8 text-muted-foreground">
+        <div className="mt-12 flex justify-center text-muted-foreground">
           <div className="text-center">
             <div className="font-semibold">Email</div>
-            <div>hello@pathwaysconsulting.com</div>
-          </div>
-          <div className="text-center">
-            <div className="font-semibold">Phone</div>
-            <div>(555) 123-4567</div>
+            <div>pathwaysconsultingorg@gmail.com</div>
           </div>
         </div>
       </div>

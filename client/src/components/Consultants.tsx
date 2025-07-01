@@ -4,28 +4,28 @@ export default function Consultants() {
       name: "Diya Patel",
       school: "Harvard University",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      bio: "Specialized in STEM applications and research opportunities. Helped 150+ students gain admission to top-tier universities with a focus on academic excellence and extracurricular leadership."
+      bio: "Medicine and pre-health specialist with extensive experience in medical school preparation. Expert in crafting compelling narratives for healthcare programs and research opportunities."
     },
     {
       name: "Aditya Kirubakaran",
       school: "UC Berkeley M.E.T.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      bio: "Expert in engineering and technology programs. Guides students through the competitive landscape of top engineering schools with proven strategies for standout applications."
+      image: "https://i.imgur.com/11F5NtV.png",
+      bio: "Business and engineering expert specializing in dual-degree programs. Guides students through business profiles, extracurriculars, and competitive engineering applications with proven success strategies."
     },
     {
       name: "Archisa Arora",
       school: "University of Pennsylvania",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
-      bio: "Specializes in business and liberal arts applications. Known for crafting compelling personal narratives that showcase unique perspectives and leadership potential."
+      bio: "Engineering and computer science specialist. Expert in technical program applications, research opportunities, and crafting compelling narratives for STEM fields."
     }
   ];
 
   return (
     <section id="consultants" className="py-20 relative">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: "url('https://i.imgur.com/Wg9yEHo.png')"
         }}
       ></div>
       

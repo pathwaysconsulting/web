@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Agrandir+Grand:wght@400;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +16,7 @@
   --card-foreground: hsl(210, 40%, 98%);
   --border: hsl(215, 27%, 32%);
   --input: hsl(215, 27%, 32%);
-  --primary: hsl(217, 91%, 60%);
+  --primary: hsl(194, 74%, 74%);
   --primary-foreground: hsl(222, 84%, 5%);
   --secondary: hsl(217, 32%, 17%);
   --secondary-foreground: hsl(210, 40%, 98%);
@@ -25,15 +24,15 @@
   --accent-foreground: hsl(210, 40%, 98%);
   --destructive: hsl(0, 62%, 30%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(217, 91%, 60%);
+  --ring: hsl(194, 74%, 74%);
   --radius: 0.75rem;
   
   /* Custom glass theme colors */
-  --space-blue: hsl(217, 91%, 60%);
+  --space-blue: hsl(194, 74%, 74%);
   --cosmic-black: hsl(222, 84%, 5%);
   --deep-navy: hsl(217, 32%, 17%);
   --glass-white: hsla(0, 0%, 100%, 0.1);
-  --glass-blue: hsla(217, 91%, 60%, 0.2);
+  --glass-blue: hsla(194, 74%, 74%, 0.2);
 }
 
 .dark {
@@ -47,7 +46,7 @@
   --card-foreground: hsl(210, 40%, 98%);
   --border: hsl(215, 27%, 32%);
   --input: hsl(215, 27%, 32%);
-  --primary: hsl(217, 91%, 60%);
+  --primary: hsl(194, 74%, 74%);
   --primary-foreground: hsl(222, 84%, 5%);
   --secondary: hsl(217, 32%, 17%);
   --secondary-foreground: hsl(210, 40%, 98%);
@@ -55,7 +54,7 @@
   --accent-foreground: hsl(210, 40%, 98%);
   --destructive: hsl(0, 62%, 30%);
   --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(217, 91%, 60%);
+  --ring: hsl(194, 74%, 74%);
 }
 
 @layer base {
@@ -81,16 +80,16 @@
   }
   
   .glass-button {
-    background: rgba(59, 130, 246, 0.2);
+    background: rgba(135, 206, 235, 0.2);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(59, 130, 246, 0.3);
+    border: 1px solid rgba(135, 206, 235, 0.3);
     transition: all 0.3s ease;
   }
   
   .glass-button:hover {
-    background: rgba(59, 130, 246, 0.3);
+    background: rgba(135, 206, 235, 0.3);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 10px 25px rgba(135, 206, 235, 0.2);
   }
   
   .space-bg {
@@ -98,7 +97,8 @@
   }
 
   .header-font {
-    font-family: 'Agrandir Grand', 'Open Sans', system-ui, sans-serif;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    font-weight: 800;
   }
 
   .body-font {

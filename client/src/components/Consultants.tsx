@@ -1,9 +1,15 @@
 export default function Consultants() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const consultants = [
     {
       name: "Diya Patel",
       school: "Harvard University",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGBOYuTViXTqA/profile-displayphoto-shrink_800_800/B4DZZgSM54HIAc-/0/1745372108012?e=1756944000&v=beta&t=DvUuw3pUupxxPPF3fBuZ_h7Kkl_LYSUTpE4NPy8LUGY",
       bio: "Medicine and pre-health specialist with extensive experience in medical school preparation. Expert in crafting compelling narratives for healthcare programs and research opportunities."
     },
     {
@@ -15,7 +21,7 @@ export default function Consultants() {
     {
       name: "Archisa Arora",
       school: "University of Pennsylvania",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGdJxQyezrA8A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729811053003?e=1756944000&v=beta&t=yu-LYIl0jWQn5SLPTqwZCeuJQqTe6uuR1JaVAS68cd0",
       bio: "Engineering and computer science specialist. Expert in technical program applications, research opportunities, and crafting compelling narratives for STEM fields."
     }
   ];
@@ -53,7 +59,10 @@ export default function Consultants() {
               <h3 className="text-2xl font-bold mb-2 header-font">{consultant.name}</h3>
               <div className="text-primary font-semibold mb-4">{consultant.school}</div>
               <p className="text-muted-foreground mb-6">{consultant.bio}</p>
-              <button className="glass-button px-6 py-2 rounded-full">
+              <button 
+                onClick={scrollToContact}
+                className="glass-button px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300"
+              >
                 Schedule Consultation
               </button>
             </div>
